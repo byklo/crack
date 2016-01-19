@@ -8,16 +8,7 @@ public class Node {
 		this.next = null;
 	}
 
-	public void appendToTail(int data) {
-		Node n = new Node(data);
-		Node tail = this;
-		while (tail.getNext() != null) {
-			tail = tail.getNext();
-		}
-		tail.setNext(n);
-	}
-
-	public Node getNext() {
+	public Node next() {
 		return this.next;
 	}
 
